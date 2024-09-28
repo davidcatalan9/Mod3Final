@@ -55,12 +55,12 @@ function mostrarProductos() {
     productosDisponibles.forEach(function (producto, index) {
         const li = document.createElement('li');
         li.textContent = `${producto.nombre} - $${producto.precio}`;
-        ListaProductos?.appendChild(li);
+        ListaProductos.appendChild(li);
 
         const option = document.createElement('option');
         option.value = index;
         option.textContent = producto.nombre;
-        selectProducto?.appendChild(option);
+        selectProducto.appendChild(option);
     });
 }
 
